@@ -84,7 +84,9 @@
     },
 
     "user": {
-      "taskGet": {}
+      "taskGet": {},
+
+      "taskGetByID": {}
     }
   },
 

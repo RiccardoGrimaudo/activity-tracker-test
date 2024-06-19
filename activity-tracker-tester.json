@@ -20,8 +20,8 @@
 
       "updateMyPassword": {
         "passwordCurrent": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
-        "password": "@Dmin1234",
-        "passwordConfirm": "@Dmin1234"
+        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
+        "passwordConfirm": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk"
       },
 
       "logout": {},
@@ -50,8 +50,8 @@
 
       "updateMyPassword": {
         "passwordCurrent": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
-        "password": "T£st1234",
-        "passwordConfirm": "T£st1234"
+        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
+        "passwordConfirm": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk"
       },
 
       "logout": {},

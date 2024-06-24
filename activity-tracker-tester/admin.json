@@ -1,0 +1,83 @@
+{
+  "users": {
+    "admin": {
+      "userGet": {},
+
+      "userGetByID": {},
+
+      "userGetActivitiesByID": {},
+
+      "userPatch": {
+        "firstName": "Testing Patch..."
+      },
+
+      "userDelete": {},
+
+      "login": {
+        "email": "activitytracker.tn@gmail.com",
+        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk"
+      },
+
+      "updateMyPassword": {
+        "passwordCurrent": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
+        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUv",
+        "passwordConfirm": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUv"
+      },
+
+      "logout": {},
+
+      "changeStatus": {
+        "isActive": true
+      },
+
+      "getMe": {},
+
+      "updateMe": {
+        "firstName": "Activity Tracker",
+        "lastName": "Admin"
+      }
+    }
+  },
+
+  "tasks": {
+    "admin": {
+      "taskGet": {},
+
+      "taskGetByID": {},
+
+      "taskPost": {
+        "taskName": "Testing the tasks",
+        "state": "In progress"
+      },
+
+      "taskPatch": {
+        "progressState": 20
+      },
+
+      "taskDelete": {}
+    }
+  },
+
+  "activities": {
+    "admin": {
+      "activityGet": {},
+
+      "activityGetByID": {},
+
+      "activityPost": {
+        "userID": "",
+        "taskID": "",
+        "taskName": "testing the tasks...",
+        "startTime": "2024-06-13T09:00",
+        "endTime": "2024-06-13T13:00",
+        "notes": "Admin Test"
+      },
+
+      "activityPatch": {
+        "notes": "Patched Admin Test"
+      },
+
+      "activityDelete": {}
+    }
+  }
+}

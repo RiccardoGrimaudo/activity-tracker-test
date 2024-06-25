@@ -1,0 +1,60 @@
+{
+  "users": {
+    "user": {
+      "userGetByID": {},
+
+      "userDelete": {},
+
+      "login": {
+        "email": "ycnxdfsrvvapzsdsin@cazlq.com",
+        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk"
+      },
+
+      "updateMyPassword": {
+        "passwordCurrent": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
+        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
+        "passwordConfirm": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk"
+      },
+
+      "logout": {},
+
+      "getMe": {},
+
+      "updateMe": {
+        "firstName": "Activity Tracker Second",
+        "lastName": "Admin Second"
+      }
+    }
+  },
+
+  "tasks": {
+    "user": {
+      "taskGet": {},
+
+      "taskGetByID": {}
+    }
+  },
+
+  "activities": {
+    "user": {
+      "activityGet": {},
+
+      "activityGetByID": {},
+
+      "activityPost": {
+        "taskID": "",
+        "taskName": "Testing all the tasks",
+        "activityDate": "2024-06-13",
+        "startTime": "2024-06-13T09:00",
+        "endTime": "2024-06-13T13:00",
+        "notes": "User Test"
+      },
+
+      "activityPatch": {
+        "notes": "Patched User Test"
+      },
+
+      "activityDelete": {}
+    }
+  }
+}

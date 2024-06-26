@@ -5,7 +5,6 @@ const jsonData = JSON.parse(data);
 
 let token;
 let id;
-let firstUserId;
 let firstTaskId;
 let newTaskId;
 let firstActivityId;
@@ -134,8 +133,6 @@ async function getUsers() {
     credentials: "include",
   });
 
-  let res = await req.json();
-  firstUserId = res.data.document[0]._id;
   return req.status;
 }
 
@@ -143,7 +140,7 @@ async function getUserById() {
   await waitForToken();
   await waitForId();
 
-  let req = await fetch(`http://127.0.0.1:3000/api/v1/users/${firstUserId}`, {
+  let req = await fetch(`http://127.0.0.1:3000/api/v1/users/${id}`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -158,16 +155,13 @@ async function getUserActivities() {
   await waitForToken();
   await waitForId();
 
-  let req = await fetch(
-    `http://127.0.0.1:3000/api/v1/users/${firstUserId}/activities`,
-    {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-      },
-    }
-  );
+  let req = await fetch(`http://127.0.0.1:3000/api/v1/users/${id}/activities`, {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+  });
 
   return req.status;
 }
@@ -201,8 +195,8 @@ async function updateMyPassword() {
 
   token = null;
   let res = await req.json();
-
   token = res.token;
+
   return req.status;
 }
 
@@ -254,6 +248,7 @@ async function getTasks() {
 
   let res = await req.json();
   firstTaskId = res.data.document[0]._id;
+
   return req.status;
 }
 
@@ -287,6 +282,7 @@ async function addTask() {
 
   let res = await req.json();
   newTaskId = res.data.task._id;
+
   return req.status;
 }
 
@@ -319,6 +315,7 @@ async function getActivities() {
 
   let res = await req.json();
   firstActivityId = res.data.document[0]._id;
+
   return req.status;
 }
 
@@ -347,7 +344,7 @@ async function addActivity() {
   await waitForNewTaskId();
 
   let activityPostData = { ...jsonData.activities.admin.activityPost };
-  activityPostData.userID = firstUserId;
+  activityPostData.userID = id;
   activityPostData.taskID = newTaskId;
 
   let req = await fetch("http://127.0.0.1:3000/api/v1/activities", {
@@ -361,6 +358,7 @@ async function addActivity() {
 
   let res = await req.json();
   newActivityId = res.data.activity._id;
+
   return req.status;
 }
 
@@ -415,15 +413,18 @@ async function deleteTask() {
 }
 
 async function deleteUser() {
+  await waitForId();
   await waitForToken();
-  await waitForNewTaskId();
 
-  let req = await fetch(`http://127.0.0.1:3000/api/v1/users/${firstUserId}`, {
-    method: "DELETE",
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  });
+  let req = await fetch(
+    `http://127.0.0.1:3000/api/v1/users/667bdeccb3021d6974641669`,
+    {
+      method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
 
   return req.status;
 }

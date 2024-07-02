@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "admin": "node admin.js",
+    "user": "node user.js",
+    "start": "npm run admin && npm run user"
   },
   "author": "",
   "license": "ISC",

@@ -417,7 +417,7 @@ async function deleteUser() {
   await waitForToken();
 
   let req = await fetch(
-    `http://127.0.0.1:3000/api/v1/users/667bdeccb3021d6974641669`,
+    `http://127.0.0.1:3000/api/v1/users/668286cb797e7cb8410bf9b2`,
     {
       method: "DELETE",
       headers: {

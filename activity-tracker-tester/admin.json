@@ -47,7 +47,8 @@
 
       "taskPost": {
         "taskName": "Testing the tasks",
-        "state": "In progress"
+        "state": "In progress",
+        "expectedHours": 2
       },
 
       "taskPatch": {
@@ -68,8 +69,8 @@
         "userID": "",
         "taskID": "",
         "taskName": "testing the tasks...",
-        "startTime": "2024-06-13T09:00",
-        "endTime": "2024-06-13T13:00",
+        "startTime": "2024-07-01T09:00",
+        "endTime": "2024-07-01T13:00",
         "notes": "Admin Test"
       },
 

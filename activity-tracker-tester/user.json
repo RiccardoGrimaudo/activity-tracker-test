@@ -6,14 +6,14 @@
       "userDelete": {},
 
       "login": {
-        "email": "ycnxdfsrvvapzsdsin@cazlq.com",
-        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUv"
+        "email": "lelag10876@luravel.com",
+        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk"
       },
 
       "updateMyPassword": {
-        "passwordCurrent": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUv",
-        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
-        "passwordConfirm": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk"
+        "passwordCurrent": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUk",
+        "password": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUv",
+        "passwordConfirm": "1wVb|&WLr,kG3P[0{4?,c&IVcMihUkUv"
       },
 
       "logout": {},
@@ -44,9 +44,9 @@
       "activityPost": {
         "taskID": "",
         "taskName": "Testing all the tasks",
-        "activityDate": "2024-06-13",
-        "startTime": "2024-06-13T09:00",
-        "endTime": "2024-06-13T13:00",
+        "activityDate": "2024-07-01",
+        "startTime": "2024-07-01T09:00",
+        "endTime": "2024-07-01T13:00",
         "notes": "User Test"
       },
 
